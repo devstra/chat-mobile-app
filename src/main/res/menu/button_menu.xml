@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/addFile"
+        android:title="Fichiers"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:onClick="addMedia"/>
+    <item android:id="@+id/takePhoto"
+        android:title="Photo"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:onClick="takePhoto"/>
+    <item android:id="@+id/takeVideo"
+        android:title="Vidéo"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:onClick="takeVideo"/>
+    <item android:id="@+id/recordAudio"
+        android:title="Audio"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:onClick="recordAudio"/>
+</menu>

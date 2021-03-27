@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/colorBackgroundLight"
+    tools:context=".SignUpActivity">
+
+
+    <ImageButton
+        android:id="@+id/btnRetour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#F9F9F9"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+    <TextView
+        android:id="@+id/textViewTitreSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/talkie"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/champsSignUpEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/champsSignUpEmail"
+        android:layout_width="286dp"
+        android:layout_height="50dp"
+        android:background="@drawable/login_field"
+        android:ems="10"
+        android:hint="@string/adresse_email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/champsSignUpPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitreSignUp" />
+
+    <EditText
+        android:id="@+id/champsSignUpPassword"
+        android:layout_width="286dp"
+        android:layout_height="50dp"
+        android:background="@drawable/login_field"
+        android:ems="10"
+        android:hint="@string/mot_de_passe"
+        android:inputType="textPassword"
+        android:paddingLeft="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/champsSignUpPasswordConfirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/champsSignUpEmail" />
+
+    <EditText
+        android:id="@+id/champsSignUpPasswordConfirm"
+        android:layout_width="286dp"
+        android:layout_height="50dp"
+        android:background="@drawable/login_field"
+        android:ems="10"
+        android:hint="@string/confirmer_mot_de_passe"
+        android:inputType="textPassword"
+        android:paddingLeft="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/boutonSignUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/champsSignUpPassword" />
+
+    <Button
+        android:id="@+id/boutonSignUp"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/colorPrimary"
+        android:focusable="false"
+        android:text="@string/s_inscrire"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/champsSignUpPasswordConfirm" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
